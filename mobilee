@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0
+	}
+	#wrapper{
+		position: fixed;
+		display: flex;
+		width: 100vh;
+		height: 100vh;
+		/*background-image: url('desktop-45.png');*/
+		background-size: cover;
+		display: flex;
+	}
+	.unit{
+		width: 100%;
+		height:100%;
+		position: relative;
+		float: left;
+    	background-size: 100% !important;
+	}
+	#scroll{
+		height: 300vh;
+		width: 100%;
+		pointer-events: none;
+	}
+.unit_1 {background: url('img/Untitled-2-45.png') left 20% no-repeat, url('img/Untitled-2-100.png') left 50% no-repeat, url('img/Untitled-2-155.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_2 {background: url('img/Untitled-2-46.png') left 20% no-repeat, url('img/Untitled-2-101.png') left 50% no-repeat, url('img/Untitled-2-156.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_3 {background: url('img/Untitled-2-47.png') left 20% no-repeat, url('img/Untitled-2-102.png') left 50% no-repeat, url('img/Untitled-2-157.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_4 {background: url('img/Untitled-2-48.png') left 20% no-repeat, url('img/Untitled-2-103.png') left 50% no-repeat, url('img/Untitled-2-158.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_5 {background: url('img/Untitled-2-49.png') left 20% no-repeat, url('img/Untitled-2-104.png') left 50% no-repeat, url('img/Untitled-2-159.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_6 {background: url('img/Untitled-2-50.png') left 20% no-repeat, url('img/Untitled-2-105.png') left 50% no-repeat, url('img/Untitled-2-160.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_7 {background: url('img/Untitled-2-51.png') left 20% no-repeat, url('img/Untitled-2-106.png') left 50% no-repeat, url('img/Untitled-2-161.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_8 {background: url('img/Untitled-2-52.png') left 20% no-repeat, url('img/Untitled-2-107.png') left 50% no-repeat, url('img/Untitled-2-162.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_9 {background: url('img/Untitled-2-53.png') left 20% no-repeat, url('img/Untitled-2-108.png') left 50% no-repeat, url('img/Untitled-2-163.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_10{background: url('img/Untitled-2-54.png') left 20% no-repeat, url('img/Untitled-2-109.png') left 50% no-repeat, url('img/Untitled-2-164.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_11{background: url('img/Untitled-2-55.png') left 20% no-repeat, url('img/Untitled-2-110.png') left 50% no-repeat, url('img/Untitled-2-165.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_12{background: url('img/Untitled-2-56.png') left 20% no-repeat, url('img/Untitled-2-111.png') left 50% no-repeat, url('img/Untitled-2-166.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_13{background: url('img/Untitled-2-57.png') left 20% no-repeat, url('img/Untitled-2-112.png') left 50% no-repeat, url('img/Untitled-2-167.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_14{background: url('img/Untitled-2-58.png') left 20% no-repeat, url('img/Untitled-2-113.png') left 50% no-repeat, url('img/Untitled-2-168.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_15{background: url('img/Untitled-2-59.png') left 20% no-repeat, url('img/Untitled-2-114.png') left 50% no-repeat, url('img/Untitled-2-169.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_16{background: url('img/Untitled-2-60.png') left 20% no-repeat, url('img/Untitled-2-115.png') left 50% no-repeat, url('img/Untitled-2-170.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_17{background: url('img/Untitled-2-61.png') left 20% no-repeat, url('img/Untitled-2-116.png') left 50% no-repeat, url('img/Untitled-2-171.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_18{background: url('img/Untitled-2-62.png') left 20% no-repeat, url('img/Untitled-2-117.png') left 50% no-repeat, url('img/Untitled-2-172.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_19{background: url('img/Untitled-2-63.png') left 20% no-repeat, url('img/Untitled-2-118.png') left 50% no-repeat, url('img/Untitled-2-173.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_20{background: url('img/Untitled-2-64.png') left 20% no-repeat, url('img/Untitled-2-119.png') left 50% no-repeat, url('img/Untitled-2-174.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_21{background: url('img/Untitled-2-65.png') left 20% no-repeat, url('img/Untitled-2-120.png') left 50% no-repeat, url('img/Untitled-2-175.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_22{background: url('img/Untitled-2-66.png') left 20% no-repeat, url('img/Untitled-2-121.png') left 50% no-repeat, url('img/Untitled-2-176.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_23{background: url('img/Untitled-2-67.png') left 20% no-repeat, url('img/Untitled-2-122.png') left 50% no-repeat, url('img/Untitled-2-177.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_24{background: url('img/Untitled-2-68.png') left 20% no-repeat, url('img/Untitled-2-123.png') left 50% no-repeat, url('img/Untitled-2-178.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_25{background: url('img/Untitled-2-69.png') left 20% no-repeat, url('img/Untitled-2-124.png') left 50% no-repeat, url('img/Untitled-2-179.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_26{background: url('img/Untitled-2-70.png') left 20% no-repeat, url('img/Untitled-2-125.png') left 50% no-repeat, url('img/Untitled-2-180.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_27{background: url('img/Untitled-2-71.png') left 20% no-repeat, url('img/Untitled-2-126.png') left 50% no-repeat, url('img/Untitled-2-181.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_28{background: url('img/Untitled-2-72.png') left 20% no-repeat, url('img/Untitled-2-127.png') left 50% no-repeat, url('img/Untitled-2-182.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_29{background: url('img/Untitled-2-73.png') left 20% no-repeat, url('img/Untitled-2-128.png') left 50% no-repeat, url('img/Untitled-2-183.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_30{background: url('img/Untitled-2-74.png') left 20% no-repeat, url('img/Untitled-2-129.png') left 50% no-repeat, url('img/Untitled-2-184.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_31{background: url('img/Untitled-2-75.png') left 20% no-repeat, url('img/Untitled-2-130.png') left 50% no-repeat, url('img/Untitled-2-185.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_32{background: url('img/Untitled-2-76.png') left 20% no-repeat, url('img/Untitled-2-131.png') left 50% no-repeat, url('img/Untitled-2-186.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_33{background: url('img/Untitled-2-77.png') left 20% no-repeat, url('img/Untitled-2-132.png') left 50% no-repeat, url('img/Untitled-2-187.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_34{background: url('img/Untitled-2-78.png') left 20% no-repeat, url('img/Untitled-2-133.png') left 50% no-repeat, url('img/Untitled-2-188.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_35{background: url('img/Untitled-2-79.png') left 20% no-repeat, url('img/Untitled-2-134.png') left 50% no-repeat, url('img/Untitled-2-189.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_36{background: url('img/Untitled-2-80.png') left 20% no-repeat, url('img/Untitled-2-135.png') left 50% no-repeat, url('img/Untitled-2-190.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_37{background: url('img/Untitled-2-81.png') left 20% no-repeat, url('img/Untitled-2-136.png') left 50% no-repeat, url('img/Untitled-2-191.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_38{background: url('img/Untitled-2-82.png') left 20% no-repeat, url('img/Untitled-2-137.png') left 50% no-repeat, url('img/Untitled-2-192.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_39{background: url('img/Untitled-2-83.png') left 20% no-repeat, url('img/Untitled-2-138.png') left 50% no-repeat, url('img/Untitled-2-193.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_40{background: url('img/Untitled-2-84.png') left 20% no-repeat, url('img/Untitled-2-139.png') left 50% no-repeat, url('img/Untitled-2-194.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_41{background: url('img/Untitled-2-85.png') left 20% no-repeat, url('img/Untitled-2-140.png') left 50% no-repeat, url('img/Untitled-2-195.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_42{background: url('img/Untitled-2-86.png') left 20% no-repeat, url('img/Untitled-2-141.png') left 50% no-repeat, url('img/Untitled-2-196.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_43{background: url('img/Untitled-2-87.png') left 20% no-repeat, url('img/Untitled-2-142.png') left 50% no-repeat, url('img/Untitled-2-197.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_44{background: url('img/Untitled-2-88.png') left 20% no-repeat, url('img/Untitled-2-143.png') left 50% no-repeat, url('img/Untitled-2-198.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_45{background: url('img/Untitled-2-89.png') left 20% no-repeat, url('img/Untitled-2-144.png') left 50% no-repeat, url('img/Untitled-2-199.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_46{background: url('img/Untitled-2-90.png') left 20% no-repeat, url('img/Untitled-2-145.png') left 50% no-repeat, url('img/Untitled-2-200.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_47{background: url('img/Untitled-2-91.png') left 20% no-repeat, url('img/Untitled-2-146.png') left 50% no-repeat, url('img/Untitled-2-201.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_48{background: url('img/Untitled-2-92.png') left 20% no-repeat, url('img/Untitled-2-147.png') left 50% no-repeat, url('img/Untitled-2-202.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_49{background: url('img/Untitled-2-93.png') left 20% no-repeat, url('img/Untitled-2-148.png') left 50% no-repeat, url('img/Untitled-2-203.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_50{background: url('img/Untitled-2-94.png') left 20% no-repeat, url('img/Untitled-2-149.png') left 50% no-repeat, url('img/Untitled-2-204.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_51{background: url('img/Untitled-2-95.png') left 20% no-repeat, url('img/Untitled-2-150.png') left 50% no-repeat, url('img/Untitled-2-205.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_52{background: url('img/Untitled-2-96.png') left 20% no-repeat, url('img/Untitled-2-151.png') left 50% no-repeat, url('img/Untitled-2-206.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_53{background: url('img/Untitled-2-97.png') left 20% no-repeat, url('img/Untitled-2-152.png') left 50% no-repeat, url('img/Untitled-2-207.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_54{background: url('img/Untitled-2-98.png') left 20% no-repeat, url('img/Untitled-2-153.png') left 50% no-repeat, url('img/Untitled-2-208.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+.unit_55{background: url('img/Untitled-2-99.png') left 20% no-repeat, url('img/Untitled-2-154.png') left 50% no-repeat, url('img/Untitled-2-209.png') left 80% no-repeat, linear-gradient(to right, #cccccc 0%, #ffffff 40%, #cccccc 100%);}
+</style>6
+<title>Wayp10ints in Directions</title>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="wrapper">
+
+	<div class="unit unit_1"></div>
+	<div class="unit unit_2"></div>
+	<div class="unit unit_3"></div>
+	<div class="unit unit_4"></div>
+	<div class="unit unit_5"></div>
+	<div class="unit unit_6"></div>
+	<div class="unit unit_7"></div>
+	<div class="unit unit_8"></div>
+	<div class="unit unit_9"></div>
+	<div class="unit unit_10"></div>
+	<div class="unit unit_11"></div>
+	<div class="unit unit_12"></div>
+	<div class="unit unit_13"></div>
+	<div class="unit unit_14"></div>
+	<div class="unit unit_15"></div>
+	<div class="unit unit_16"></div>
+	<div class="unit unit_17"></div>
+	<div class="unit unit_18"></div>
+	<div class="unit unit_19"></div>
+	<div class="unit unit_20"></div>
+	<div class="unit unit_21"></div>
+	<div class="unit unit_22"></div>
+	<div class="unit unit_23"></div>
+	<div class="unit unit_24"></div>
+	<div class="unit unit_25"></div>
+	<div class="unit unit_26"></div>
+	<div class="unit unit_27"></div>
+	<div class="unit unit_28"></div>
+	<div class="unit unit_29"></div>
+	<div class="unit unit_30"></div>
+	<div class="unit unit_31"></div>
+	<div class="unit unit_32"></div>
+	<div class="unit unit_33"></div>
+	<div class="unit unit_34"></div>
+	<div class="unit unit_35"></div>
+	<div class="unit unit_36"></div>
+	<div class="unit unit_37"></div>
+	<div class="unit unit_38"></div>
+	<div class="unit unit_39"></div>
+	<div class="unit unit_40"></div>
+	<div class="unit unit_41"></div>
+	<div class="unit unit_42"></div>
+	<div class="unit unit_43"></div>
+	<div class="unit unit_44"></div>
+	<div class="unit unit_45"></div>
+	<div class="unit unit_46"></div>
+	<div class="unit unit_47"></div>
+	<div class="unit unit_48"></div>
+	<div class="unit unit_49"></div>
+	<div class="unit unit_50"></div>
+	<div class="unit unit_51"></div>
+	<div class="unit unit_52"></div>
+	<div class="unit unit_53"></div>
+	<div class="unit unit_54"></div>
+	<div class="unit unit_55"></div>
+</div>
+<div id="scroll"></div>
+<script type="text/javascript">
+	var scrollheight = $('#scroll').outerHeight()-window.innerHeight
+	$('.unit').each(function(){
+		$(this).css({'height':Math.floor(Math.random() * scrollheight) + window.innerHeight  +'px' })
+	})
+
+    $(window).scroll(function (event) {
+    	console.log($(window).scrollTop())
+    	console.log(scrollheight)
+		$('.unit').each(function(){
+			$(this).css({'margin-top':-1*map_range($(window).scrollTop(), 0, scrollheight, 0,($(this).outerHeight()-window.innerHeight )) })
+		})
+    })
+    function map_range(value, low1, high1, low2, high2) {
+    	return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+	}
+</script>
+</body>
+</html>

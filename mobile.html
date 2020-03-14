@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0
+	}
+	#wrapper{
+		position: fixed;
+		display: flex;
+		width: 100vw;
+		height: 100vw;
+		/*background-image: url('desktop-45.png');*/
+		background-size: cover;
+		display: flex;
+    	z-index: 100
+	}
+	.unit{
+		width: 100%;
+		height:100%;
+		position: relative;
+		float: left;
+    box-shadow: 0vh 0vh 0.5vh white;
+    	background-size: 100% !important;
+    	z-index: 1000
+	}
+	#scroll{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		overflow-y:scroll;
+    	z-index: 1000
+	}
+	#scroll div{
+		height: 300vw;
+		width: 100%;
+		position: relative;
+	}
+.unit_1 {background: url('img/Untitled-2-23.png') left 90% no-repeat, url('img/Untitled-2-01.png') left 10% no-repeat, url('img/Untitled-20-46.png') left 50% no-repeat;}
+.unit_2 {background: url('img/Untitled-2-24.png') left 90% no-repeat, url('img/Untitled-2-02.png') left 10% no-repeat, url('img/Untitled-20-47.png') left 50% no-repeat;}
+.unit_3 {background: url('img/Untitled-2-25.png') left 90% no-repeat, url('img/Untitled-2-03.png') left 10% no-repeat, url('img/Untitled-20-48.png') left 50% no-repeat;}
+.unit_4 {background: url('img/Untitled-2-26.png') left 90% no-repeat, url('img/Untitled-2-04.png') left 10% no-repeat, url('img/Untitled-20-49.png') left 50% no-repeat;}
+.unit_5 {background: url('img/Untitled-2-27.png') left 90% no-repeat, url('img/Untitled-2-05.png') left 10% no-repeat, url('img/Untitled-20-50.png') left 50% no-repeat;}
+.unit_6 {background: url('img/Untitled-2-28.png') left 90% no-repeat, url('img/Untitled-2-06.png') left 10% no-repeat, url('img/Untitled-20-51.png') left 50% no-repeat;}
+.unit_7 {background: url('img/Untitled-2-29.png') left 90% no-repeat, url('img/Untitled-2-07.png') left 10% no-repeat, url('img/Untitled-20-52.png') left 50% no-repeat;}
+.unit_8 {background: url('img/Untitled-2-30.png') left 90% no-repeat, url('img/Untitled-2-08.png') left 10% no-repeat, url('img/Untitled-20-53.png') left 50% no-repeat;}
+.unit_9 {background: url('img/Untitled-2-31.png') left 90% no-repeat, url('img/Untitled-2-09.png') left 10% no-repeat, url('img/Untitled-20-54.png') left 50% no-repeat;}
+.unit_10{background: url('img/Untitled-2-32.png') left 90% no-repeat, url('img/Untitled-2-10.png') left 10% no-repeat, url('img/Untitled-20-55.png') left 50% no-repeat;}
+.unit_11{background: url('img/Untitled-2-33.png') left 90% no-repeat, url('img/Untitled-2-11.png') left 10% no-repeat, url('img/Untitled-20-56.png') left 50% no-repeat;}
+.unit_12{background: url('img/Untitled-2-12.png') left 10% no-repeat, url('img/Untitled-2-34.png') left 90% no-repeat, url('img/Untitled-20-57.png') left 50% no-repeat;}
+.unit_13{background: url('img/Untitled-2-13.png') left 10% no-repeat, url('img/Untitled-2-35.png') left 90% no-repeat, url('img/Untitled-20-58.png') left 50% no-repeat;}
+.unit_14{background: url('img/Untitled-2-14.png') left 10% no-repeat, url('img/Untitled-2-36.png') left 90% no-repeat, url('img/Untitled-20-59.png') left 50% no-repeat;}
+.unit_15{background: url('img/Untitled-2-15.png') left 10% no-repeat, url('img/Untitled-2-37.png') left 90% no-repeat, url('img/Untitled-20-60.png') left 50% no-repeat;}
+.unit_16{background: url('img/Untitled-2-16.png') left 10% no-repeat, url('img/Untitled-2-38.png') left 90% no-repeat, url('img/Untitled-20-61.png') left 50% no-repeat;}
+.unit_17{background: url('img/Untitled-2-17.png') left 10% no-repeat, url('img/Untitled-2-39.png') left 90% no-repeat, url('img/Untitled-20-62.png') left 50% no-repeat;}
+.unit_18{background: url('img/Untitled-2-18.png') left 10% no-repeat, url('img/Untitled-2-40.png') left 90% no-repeat, url('img/Untitled-20-63.png') left 50% no-repeat;}
+.unit_19{background: url('img/Untitled-2-19.png') left 10% no-repeat, url('img/Untitled-2-41.png') left 90% no-repeat, url('img/Untitled-20-64.png') left 50% no-repeat;}
+.unit_20{background: url('img/Untitled-2-20.png') left 10% no-repeat, url('img/Untitled-2-42.png') left 90% no-repeat, url('img/Untitled-20-65.png') left 50% no-repeat;}
+.unit_21{background: url('img/Untitled-2-21.png') left 10% no-repeat, url('img/Untitled-2-43.png') left 90% no-repeat, url('img/Untitled-20-66.png') left 50% no-repeat;}
+.unit_22{background: url('img/Untitled-2-22.png') left 10% no-repeat, url('img/Untitled-2-44.png') left 90% no-repeat, url('img/Untitled-20-67.png') left 50% no-repeat;}
+#bg_wrapper{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	pointer-events: none;
+	display: flex;
+	z-index: 0;
+	top: 0
+}
+#bg_wrapper div{
+		width: 100%;
+		height:100%;
+		position: relative;
+		float: left;
+    	background-size: 100% !important;
+    background: linear-gradient(to right, #626262, rgb(246, 246, 246) 20.17%, #cacaca 55.46%, #949494 80%)}
+</style>
+<title>Wayp10ints in Directions</title>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script> 
+</head>
+<body>
+<div id="wrapper">
+	<div class="unit unit_1"></div>
+	<div class="unit unit_2"></div>
+	<div class="unit unit_3"></div>
+	<div class="unit unit_4"></div>
+	<div class="unit unit_5"></div>
+	<div class="unit unit_6"></div>
+	<div class="unit unit_7"></div>
+	<div class="unit unit_8"></div>
+	<div class="unit unit_9"></div>
+	<div class="unit unit_10"></div>
+	<div class="unit unit_11"></div>
+	<div class="unit unit_12"></div>
+	<div class="unit unit_13"></div>
+	<div class="unit unit_14"></div>
+	<div class="unit unit_15"></div>
+	<div class="unit unit_16"></div>
+	<div class="unit unit_17"></div>
+	<div class="unit unit_18"></div>
+	<div class="unit unit_19"></div>
+	<div class="unit unit_20"></div>
+	<div class="unit unit_21"></div>
+	<div class="unit unit_22"></div>
+</div>
+<div id="bg_wrapper">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+<div id="scroll">
+	<div></div>
+</div>
+<script type="text/javascript">
+	$('#wrapper').css({'height': window.innerHeight})
+	var scrollheight = $('#scroll').outerHeight()-$('#scroll div').outerHeight()
+	$('.unit').each(function(){
+		$(this).css({'height':Math.floor(Math.random() * scrollheight) + $('#scroll div').outerHeight()  +'px' })
+	})
+
+    $('#scroll').scroll(function (event) {
+    	console.log($('#scroll div').offset().top*-1)
+    	console.log(map_range($('#scroll div').offset().top*-1, 0, scrollheight, 0,($(this).outerHeight()-window.innerHeight )))
+		$('.unit').each(function(){
+			$(this).css({'margin-top':map_range($('#scroll div').offset().top*-1, 0, scrollheight, 0,($(this).outerHeight()-window.innerHeight )) })
+		})
+    })
+    function map_range(value, low1, high1, low2, high2) {
+    	return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+	}
+</script>
+</body>
+</html>
